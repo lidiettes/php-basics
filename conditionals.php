@@ -22,7 +22,7 @@ echo '<br>';
 //If the current minute is less than 10. Displays a message of type "the current minute is less than 10", if the current minute is greater than 15, displays a message of the type "the current minute is more than 15". If you do not meet any of the two conditions above: Displays a message of the type "does not meet any conditions”
 
 $minute = date('i');
-if($minute <10){
+if($minute < 10){
     echo 'The current minute is less than 10';
 } elseif ($minute > 15) {
     echo 'The current minute is more than 15';
@@ -36,5 +36,35 @@ echo '<br>';
 
 //Create a switch type control structure to display a different message depending on the current day of the week. You can write any type of message, because the important thing is that you understand how it works and in what cases you can use it.
 
+switch (date ('D')){
+    case 'Mon':
+        echo 'Today is monday';
+        break;
+    case 'Tue':
+        echo 'Today is Tuesday';
+        break;
+    case 'Wed':
+        echo 'Today is Wednesday';
+        break;
+    case 'Thu':
+        echo 'Today is Thursday';
+        break;
+    case 'Fri':
+        echo 'Today is Friday';
+        break;
+    case 'Sat':
+        echo 'Today is Saturday';
+        break;
+    case 'Sun':
+        echo 'Today is Sunday';
+        break;
+    default:
+        echo 'Is today new day?';
+        break;
+
+
+}
+echo '<br>';
+echo '<br>';
 
 ?>
